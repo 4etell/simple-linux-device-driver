@@ -5,11 +5,10 @@
 #include <linux/fs.h>
 #include <linux/cdev.h>
 #include <linux/device.h>
-#include<linux/slab.h>
-#include<linux/uaccess.h>
+#include <linux/slab.h>
+#include <linux/uaccess.h>
 #include <linux/ioctl.h>
-#include<linux/proc_fs.h>
-
+#include <linux/proc_fs.h>
 #include <linux/pid.h>
 #include <linux/sched.h>
 #include <linux/sched/task_stack.h>
