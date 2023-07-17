@@ -9,7 +9,6 @@
 #include <linux/uaccess.h>
 #include <linux/ioctl.h>
 #include <linux/proc_fs.h>
-
 #include <linux/pid.h>
 #include <linux/sched.h>
 #include <linux/sched/task_stack.h>

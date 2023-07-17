@@ -7,11 +7,11 @@
 #include <stdlib.h>
 #include <errno.h>
 
-void info(){
+void info() {
 	fprintf(stderr, "Usage: ./usr struct_id PID\n Avaliable struct_id:\n 0 - pt_regs \n 1 - task_struct\n");
 }
 
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[]) {
 	if (argc != 3) {
 		info();
 		return 0;
@@ -22,7 +22,7 @@ int main(int argc, char *argv[]){
 	long PID = strtol(argv[2], &p, 10);
 
 
-	if (structure_ID !=0 && structure_ID !=1){
+	if (structure_ID !=0 && structure_ID !=1) {
 		fprintf(stderr, "struct_id is not supported.\n");
 		info();
  		return 0;
